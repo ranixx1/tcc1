@@ -16,18 +16,18 @@ var calendar = new FullCalendar.Calendar(calendarDiv, {
         right: 'nextYear'
     }, 
     buttonText: {
-        today: 'Hoy',
-        month: 'Mes',
+        today: 'Hoje',
+        month: 'Mês',
         week: 'Semana',
-        day: 'Día',
-        list: 'Listado'
+        day: 'Dia',
+        list: 'Lista'
     },
-    customButtons: { // cargamos la propiedad custombuttons
-        crearEntrada: { // creamos un botón
-            text: 'Nuevo evento', // le asignamos un texto
-            click: ()=>{ // y ejecutamos la acción que se dispara.
-                abrirModal('crear'); // esta será abrir el modal con permisos de creación
-                vaciarCampos(); // y vaciamos campos
+    customButtons: { 
+        crearEntrada: {
+            text: 'Novo evento', 
+            click: ()=>{
+                abrirModal('criar');
+                vaciarCampos();
             }
         }
     },
@@ -35,23 +35,23 @@ var calendar = new FullCalendar.Calendar(calendarDiv, {
         {
             title: 'Evento de prueba 1',
             description: 'Esta es una descripción de prueba', 
-            start: '2020-09-20 12:00:00', 
-            end: '2020-09-25 12:00:00', 
+            start: '20-09-2020 12:00:00', 
+            end: '25-09-2020 12:00:00', 
             color: 'yellow', 
             textColor: 'red', 
         },
         {
             title: 'Evento de prueba 2',
             descripcion: 'Este es otro evento de un solo día',
-            start: '2020-09-26',
+            start: '26-09-2020',
             color: 'red',
             textColor: 'yellow'
         },
         {
             title: 'Evento de prueba 3',
             description: 'Este evento dura un tiempo determinado',
-            start: '2020-09-27 08:00:00', 
-            end: '2020-09-27 10:00:00', 
+            start: '27-09-2020 08:00:00', 
+            end: '27-09-2020 10:00:00', 
             color: 'blue',
             textColor: 'green'
         }        
